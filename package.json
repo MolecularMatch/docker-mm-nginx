@@ -1,0 +1,22 @@
+{
+  "name": "docker-mm-nginx",
+  "version": "0.0.0",
+  "description": "Get nginx certs from etcd",
+  "main": "get_certs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/MolecularMatch/docker-mm-nginx.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MolecularMatch/docker-mm-nginx/issues"
+  },
+  "homepage": "https://github.com/MolecularMatch/docker-mm-nginx",
+  "dependencies": {
+    "async": "^1.3.0"
+  }
+}
