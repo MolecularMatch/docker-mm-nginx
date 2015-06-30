@@ -54,4 +54,5 @@ async.series([
     }
 ], function(err) {
     if (err) console.log(err)
+    process.exit()
 })
