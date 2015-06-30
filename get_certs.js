@@ -37,7 +37,7 @@ async.series([
         })
     },
     function(callback) {
-        http.get('http://' + process.env.ETC_HOST + ':' + process.env.ETCD_PORT + '/v2/keys/passwords', function(response) {
+        http.get('http://' + process.env.ETCD_HOST + ':' + process.env.ETCD_PORT + '/v2/keys/passwords', function(response) {
             // Continuously update stream with data
             var body = ''
             response.on('data', function(d) {
