@@ -11,8 +11,4 @@ COPY package.json /usr/bin/
 COPY run.sh /usr/bin/
 COPY config/nginx.conf /etc/nginx/conf.d/default.conf
 
-#ADD config/passwords /etc/nginx/
-#ADD config/molecularmatch.com.cert /etc/nginx/
-#ADD config/molecularmatch.com.key /etc/nginx/
-
 CMD /usr/bin/run.sh
