@@ -1,0 +1,17 @@
+web:
+  image: rsmith/docker-mm-nginx
+  ports:
+   - "443:443"
+  environment:
+   - ETCD_HOST=
+   - ETCD_PORT=
+  links:
+   - elasticsearch:es
+
+elasticsearch:
+  image: elasticsearch
+  ports:
+   - "9200:9200"
+   - "9300:9300"
+  environment:
+   - CLUSTER_NAME=tute
