@@ -1,5 +1,5 @@
 web:
-  image: rsmith/docker-mm-nginx
+  image: molecularmatch/docker-mm-nginx
   ports:
    - "443:443"
   environment:
